@@ -1,0 +1,21 @@
+<section id="reservation" style="background-image: url('{{ fields.field_image.content }}'); width:100%; background-repeat: no-repeat; background-size: cover; background-position: left;">
+  <div class="reservation-overlay">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 mr-auto restaurant-info wow fadeInRight" data-wow-delay="0.3s">
+          <p>{{ fields.title.content }}</p>
+          <h6>{{ fields.field_subtitle.content }} <span>{{ fields.field_subtitle2.content }}</span></h6>
+          <h6>{{ fields.field_contact_no.content }}</h6>
+          {{ fields.field_information.content }}<br>
+          
+        </div>
+        <div class="col-md-5 reservation-form wow fadeInLeft" data-wow-delay="0.3s"> 
+          <div class="reservation-form-inner"> 
+           <h3>{{ fields.field_form_title.content }}</h3>
+           {{ fields.field_reservation_form.content }}
+          </div>
+        </div>
+      </div>
+   </div>
+  </div>  
+</section>

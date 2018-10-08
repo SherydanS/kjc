@@ -1,0 +1,20 @@
+<section id="facilities">
+  <div class="container">
+    <div class="row hall-reservation right">
+        <div class="col-md-6 reservation-time wow fadeInUp" data-wow-delay="0.6s">
+          <div class="col-md-4 mx-auto text-center">
+          <h2>{{content.field_title.0}} <span>{{content.field_subtitle.0}}</span></h2>
+          </div>
+          <p>{{content.field_description.0}}</p>
+          <p><strong></strong> {{ content.field_private_room_size }}</p>
+          <p><strong></strong> {{ content.field_capacity }}</p>
+          <div class="reservation-btn text-center">
+            <a href="{{ content.field_book_now.0['#url'] }}" class="btn btn-info page-scroll">{{ content.field_book_now.0['#title'] }}</a>
+          </div> 
+        </div>
+        <div class="col-md-6 reservation-image wow fadeInUp" data-wow-delay="0.3s">
+          <img src="{{file_url(content.field_image['#items'].entity.uri.value)}}" alt="team-image" class="img-responsive">
+        </div>
+    </div>
+  </div>
+</section>

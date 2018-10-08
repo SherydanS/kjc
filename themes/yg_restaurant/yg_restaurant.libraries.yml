@@ -1,0 +1,35 @@
+global-css: # Libraries needed in all pages.
+  css:
+    theme:
+      css/bootstrap.min.css: {}
+      css/magnific-popup.css: {}
+      css/bootstrap-datetimepicker.min.css: {}
+      css/style.css: {}
+      css/carousel.css: {}
+      'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css': { type: external, minified: true }
+      'https://fonts.googleapis.com/css?family=Satisfy': { type: external, minified: true }
+      'https://cdn.jsdelivr.net/npm/gijgo@1.9.10/css/gijgo.min.css': { type: external, minified: true }
+      'https://fonts.googleapis.com/css?family=Open+Sans:400,700,800': { type: external, minified: true }
+      
+global-js:     
+
+  js:
+    js/popper.js: {}
+    js/bootstrap.min.js: {}
+    js/superfish.min.js: {}
+    js/wow.min.js: {}
+    js/magnific-popup.min.js: {}
+    'https://cdn.jsdelivr.net/npm/gijgo@1.9.10/js/gijgo.min.js': { type: external, minified: true }
+    js/bootstrap-datetimepicker.min.js: {}
+    js/carousel.js: {}
+    js/owl.carousel.js: {}
+    js/gallery.js: {}
+    js/scroll.js: {}
+    js/main.js: {}
+
+
+  dependencies:
+
+    - core/drupalSetting
+    - core/jquery
+    - core/drupal

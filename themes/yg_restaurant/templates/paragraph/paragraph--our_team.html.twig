@@ -1,0 +1,20 @@
+<!-- Our Team section -->
+<section id="our-team">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 our-team-image wow fadeInRight" data-wow-delay="0.3s">
+        <img src="{{file_url(content.field_image['#items'].entity.uri.value)}}" alt="team-image" class="img-responsive">
+      </div>
+      <div class="col-md-6 wow fadeInLeft" data-wow-delay="0.3s">
+        <div class="col-md-4 mx-auto text-center">
+        <h2>{{content.field_title.0}} <span>{{content.field_subtitle.0}}</span></h2>
+        </div>
+        <p>{{content.field_description.0}}</p>
+        <div class="ourteam-btn text-center">
+          <a href="{{ content.field_menu.0['#url'] }}" class="btn btn-info">{{ content.field_menu.0['#title'] }}</a>
+        </div> 
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Our Team section -->

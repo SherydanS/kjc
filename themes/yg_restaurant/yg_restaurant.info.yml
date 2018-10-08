@@ -1,0 +1,37 @@
+name: 'YG Restaurant'
+description: 'YG Restaurant is a theme template perfect for Restaurant related websites'
+# core: 8.x
+type: theme
+base theme: classy
+screenshot: yg_restaurant.png
+
+
+regions:
+  logo: 'logo'
+  navigation: 'Navigation'
+  primary_menu: 'primary_menu'
+  header: 'Top Bar'
+  highlighted: 'Highlighted'
+  slider: 'slider'
+  title: 'title'
+  content: 'Content'
+  sidebar_first: 'Primary'
+  sidebar_second: 'Secondary'
+  contact: 'contact'
+  map: 'map'
+  footer: 'footer'
+  footer_address: footer column 1
+  footer_col_2: footer column 2
+  footer_col_3: footer column 3
+  contact: 'Contact Form'
+
+
+libraries:
+
+  - yg_restaurant/global-css 
+  - yg_restaurant/global-js
+# Information added by Drupal.org packaging script on 2018-09-21
+version: '8.x-1.0'
+core: '8.x'
+project: 'yg_restaurant'
+datestamp: 1537546988

@@ -1,0 +1,27 @@
+<section id="our-clients">
+  <div class="container">
+  <div class="row">
+    <div class="col-md-3 mx-auto text-center wow fadeInUp" data-wow-delay="0.3s">
+      <h2>{{ view.getTitle() }}</span></h2>
+    </div>
+    <div class="col-md-12 wow fadeInUp" data-wow-delay="0.8s">
+      <div class="clients-bg">
+        <div class="loop owl-carousel owl-theme">
+          {% for result in view.result %}
+              <div class="item">
+                <div class="row">
+                  <div class="col-md-4 client-image">
+                    <img src="{{ file_url(view.field.uri.value(view.result[loop.index-1])) }}" alt="client image" class="img-responsive">
+                  </div>
+                  <div class="col-md-8">
+                    <p><i>{{ view.field.field_testimonial_description.value(view.result[loop.index-1]) }}</i></p>
+                  </div>
+                </div>  
+              </div>            
+           {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>

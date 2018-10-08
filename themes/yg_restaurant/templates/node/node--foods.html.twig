@@ -1,0 +1,28 @@
+
+{{ content.field_banner }}
+<!-- End Top Banner Sectiom -->
+
+<section id="special-menu-detail">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 special-menu-detail-image wow fadeInUp" data-wow-delay="0.3s">
+        {{ content.field_image }}
+      </div>
+      <div class="col-md-6 special-menu-content wow fadeInUp" data-wow-delay="0.6s">
+        <h3>{{ label }}</h3>
+        <h6>{{ content.field_subtitle }}</h6>
+        {{ content.body }}
+        <h4>{{ content.field_price.label }}<span>{{ content.field_price }}</span></h4> 
+        <div class="special-menu-btn">
+          {% for item in content.field_category %}
+           {% if item['#title'] %}
+              <a href="#" class="btn btn-info">{{ item['#title']  }}</a>
+           {% endif %}
+          {% endfor %}            
+        </div> 
+      </div>
+    </div>
+  </div>
+</section>
+
+{{ content.field_view_reference_block }}

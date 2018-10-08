@@ -1,0 +1,26 @@
+<!-- Our Restaurant Section  -->
+<section id="our-restaurant" class="about-page-desc">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-6 about-page-image">
+        <div class="col-md-12 our-restaurant-image wow fadeInRight" data-wow-delay="0.3s">
+          <img src="{{file_url(content.field_image['#items'].entity.uri.value)}}" alt="team-image" class="img-responsive">
+        </div>
+        <div class="col-md-12 our-restaurant-info wow fadeInLeft" data-wow-delay="0.6s">
+          <h2>{{content.field_title.0}}</h2>
+          <p>{{content.field_description.0}}</p>
+        </div>
+      </div>  
+      <div class="col-md-6 about-page-image">
+        <div class="col-md-12 our-restaurant-info wow fadeInLeft" data-wow-delay="0.9s">
+          <h2>{{content.field_title2.0}}</h2>
+          <p>{{content.field_description2.0}}</p>
+        </div>
+        <div class="col-md-12 our-restaurant-image wow fadeInRight" data-wow-delay="0.9s">
+          <img src="{{file_url(content.field_image2['#items'].entity.uri.value)}}" alt="team-image" class="img-responsive">
+        </div>
+      </div>
+  </div>
+  </div>
+</section>
+<!-- Our Restaurant Section End -->

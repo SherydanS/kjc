@@ -1,0 +1,22 @@
+<!-- Catering Section -->
+<section id="catering">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-7 catering-image-outer wow fadeInRight" data-wow-delay="0.5s">
+        <div class="catering-image">
+          <img src="{{file_url(content.field_image['#items'].entity.uri.value)}}" alt="catering-image" class="img-responsive">
+        </div>
+      </div>
+      <div class="col-md-7 ml-auto catering-caption-outer wow fadeInLeft" data-wow-delay="0.3s">
+        <div class="catering-caption">
+        <h2 class="text-center">{{content.field_title.0}}</h2>
+        <p>{{content.field_description.0}}</p>
+        <div class="catering-btn text-center">
+          <a href="{{ content.field_menu.0['#url'] }}" class="btn btn-info">{{ content.field_menu.0['#title'] }}</a>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Catering Section -->

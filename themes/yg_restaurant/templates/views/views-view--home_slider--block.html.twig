@@ -1,0 +1,24 @@
+<section id="yg-slider">
+  <div id="carouselYGHotel" class="carousel slide" data-ride="carousel">
+     <ol class="carousel-indicators">
+      {% for result in view.result %}
+        <li data-target="#carouselYGHotel" data-slide-to="{{ loop.index-1 }}" class="{% if ( loop.index == 1 )  %}active{% endif %}"></li>
+      {% endfor %}
+     </ol>
+     <div class="carousel-inner" role="listbox">
+     {% for result in view.result %}
+       <div class="carousel-item {% if ( loop.index == 1 )  %}active{% endif %}" style="background-image: url('{{ file_url(view.field.uri.value(view.result[loop.index-1]) | image_style('slider')) }}')">
+        <div class="carousel-caption wow fadeInUp">
+        <span>{{ view.field.field_subtitle.value(view.result[loop.index-1]) }}</span>
+        <h2>{{ view.field.title.value(view.result[loop.index-1]) }}</h2>
+        <p>{{ view.field.field_description.value(view.result[loop.index-1]) }}</p>
+
+        <a href="{{ view.field.field_view_menu_value.value(view.result[loop.index-1]) }}" class="btn btn-info view-btn">{{ view.field.field_view_menu_btn.value(view.result[loop.index-1]) }}</a>
+        <a href="{{ view.field.field_book_table_link.value(view.result[loop.index-1]) }}" class="btn btn-info">{{ view.field.field_book_table_btn.value(view.result[loop.index-1]) }}</a>
+        </div>
+       </div>
+     {% endfor %}
+     </div>
+   </div>
+  </div>
+</section>

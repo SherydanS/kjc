@@ -5601,6 +5601,12 @@ ul.navbar-nav.ml-auto.sf-js-enabled.sf-arrows {
     width: 680px;
 }
 
+@media only screen and (min-width: 992px){
+    ul.navbar-nav.ml-auto.sf-js-enabled.sf-arrows {
+        width: auto;
+    }
+}
+
 nav#block-mainnavigation {
     width: 1000px;
 }
